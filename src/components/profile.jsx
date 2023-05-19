@@ -1,4 +1,4 @@
-import PropTypes  from "prop-types";
+// import PropTypes  from "prop-types";
 export function Profile({username, tag, location, avatar, stats}){
   return (
   <div class="profile">
@@ -30,11 +30,11 @@ export function Profile({username, tag, location, avatar, stats}){
 </ul>
 </div>); 
 }
-Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  followers: PropTypes.number,
-  likes: PropTypes.number,
-  views: PropTypes.number,
-};
+// Profile.propTypes = {
+//   username: PropTypes.string,
+//   tag: PropTypes.string,
+//   location: PropTypes.string,
+//   followers: PropTypes.number,
+//   likes: PropTypes.number,
+//   views: PropTypes.number,
+// };
