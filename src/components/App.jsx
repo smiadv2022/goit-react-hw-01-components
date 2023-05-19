@@ -2,9 +2,7 @@ import user from '../user.json';
 import statData from '../data.json';
 import { Profile } from './profile';
 import { Statistics } from './Statistics';
-// const statd=statData[0];
-// console.log (user);
-// console.log (statData);
+
 
 export const App = () => {
   return (
@@ -21,15 +19,17 @@ export const App = () => {
       {/* React homework template */}
 
 
- <Profile
+ {/* <Profile
+ key={user.tag}
   username={user.username}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
 />
-<Statistics  stat={statData[0]}/> 
-<Statistics title="111111111111" stat={statData[1]}/>
+
+
+ <Statistics title="Upload stats" stat={statData} key={statData.length}/>  */}
     </div>
   );
 };
