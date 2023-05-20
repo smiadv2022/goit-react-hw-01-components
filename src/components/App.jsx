@@ -3,7 +3,6 @@ import statData from '../data.json';
 import { Profile } from './profile';
 import { Statistics } from './Statistics';
 
-
 export const App = () => {
   return (
     <div
@@ -13,23 +12,18 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      {/* React homework template */}
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
 
-
- <Profile
-//  key={user.tag}
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/>
-
-
- <Statistics title="Upload stats" stat={statData} key={statData.length}/> 
+      <Statistics title="Upload stats" stat={statData} />
     </div>
   );
 };
