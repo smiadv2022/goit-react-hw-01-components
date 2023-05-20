@@ -19,8 +19,8 @@ export const App = () => {
       {/* React homework template */}
 
 
- {/* <Profile
- key={user.tag}
+ <Profile
+//  key={user.tag}
   username={user.username}
   tag={user.tag}
   location={user.location}
@@ -29,7 +29,7 @@ export const App = () => {
 />
 
 
- <Statistics title="Upload stats" stat={statData} key={statData.length}/>  */}
+ <Statistics title="Upload stats" stat={statData} key={statData.length}/> 
     </div>
   );
 };
